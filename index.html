@@ -17,56 +17,74 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Navigation -->
+  <!-- Compact Top Navigation -->
   <header class="navbar">
     <div class="container nav-content">
       <a href="index.html" class="brand">
         <span class="brand-dot"></span>
         <span>pius.ndukwu</span>
       </a>
+      <div class="status-pill">
+        <span class="status-pulse"></span>
+        <span>Embedded Software &amp; IoT Engineer</span>
+      </div>
       <nav aria-label="Main navigation">
         <ul class="nav-links">
-          <li><a href="#about" class="active">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><a href="index.html" class="active">Overview</a></li>
           <li><a href="https://github.com/Pius171" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://x.com/ndukwu_pius" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- Hero / About Section -->
-    <section id="about" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <div class="status-pill">
-            <span class="status-pulse"></span>
-            <span>Embedded Systems &amp; IoT Engineer</span>
+  <!-- Single-Glance Desktop Dashboard / Scrollable Mobile Main -->
+  <main class="main-viewport">
+    <div class="container dashboard-grid">
+      <!-- Left Column: Identity, Picture & Brief Description -->
+      <section class="bio-panel" aria-label="About Pius Onyema Ndukwu">
+        <div class="bio-top">
+          <div class="identity-header">
+            <div class="profile-frame">
+              <img
+                src="profile.jpg"
+                alt="Portrait of Pius Onyema Ndukwu"
+                class="profile-img"
+              />
+            </div>
+            <div class="identity-meta">
+              <p class="eyebrow">// Hello, I'm</p>
+              <h1 class="hero-title">
+                <span class="gradient-text">Pius Onyema Ndukwu</span>
+              </h1>
+              <p class="hero-subtitle">
+                Firmware Architecture &bull; IoT Systems &bull; Edge AI
+              </p>
+              <div class="location-tag">
+                <span>Pan-Atlantic University</span>
+                <span class="dot-sep">&bull;</span>
+                <span class="accent-tag">Nigeria</span>
+              </div>
+            </div>
           </div>
 
-          <h1 class="hero-title">
-            Hi, I'm <span class="gradient-text">Pius Onyema Ndukwu</span>
-          </h1>
-
-          <p class="hero-subtitle">
-            Firmware Architecture &bull; Connected IoT Devices &bull; Edge Intelligence
-          </p>
-
           <p class="hero-description">
-            I am an Embedded Software Engineer driven by a deep passion for building a sustainable
-            embedded systems ecosystem in Nigeria and architecting reliable Internet of Things (IoT)
-            solutions. I design and develop low-level firmware, custom peripheral drivers, wireless
-            sensor networks, and Edge AI applications that bridge physical hardware with intelligent
-            cloud platforms.
+            I am an <strong>Embedded Software Engineer</strong> passionate about building a
+            sustainable embedded systems ecosystem in Nigeria and architecting reliable Internet of
+            Things (IoT) solutions. I design low-level firmware, custom peripheral drivers,
+            long-range wireless sensor networks, and Edge AI applications that bridge physical
+            hardware with cloud platforms.
           </p>
+        </div>
 
+        <div class="bio-bottom">
           <div class="hero-highlights">
             <div class="highlight-item">
               <span class="highlight-value">55+</span>
-              <span class="highlight-label">Open-Source Repos</span>
+              <span class="highlight-label">Public Repos</span>
             </div>
             <div class="highlight-item">
-              <span class="highlight-value">MCU &amp; SoC</span>
+              <span class="highlight-value">32-Bit MCUs</span>
               <span class="highlight-label">STM32 / ESP32 / nRF52</span>
             </div>
             <div class="highlight-item">
@@ -76,44 +94,34 @@
           </div>
 
           <div class="hero-actions">
-            <a href="#skills" class="btn btn-primary">Explore My Skill Set</a>
             <a
               href="https://github.com/Pius171"
               target="_blank"
               rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              View GitHub Portfolio
+            </a>
+            <a
+              href="https://x.com/ndukwu_pius"
+              target="_blank"
+              rel="noopener noreferrer"
               class="btn btn-secondary"
             >
-              View GitHub Profile
+              Connect on X
             </a>
           </div>
         </div>
+      </section>
 
-        <div class="profile-wrapper">
-          <div class="profile-frame">
-            <img
-              src="profile.jpg"
-              alt="Portrait of Pius Onyema Ndukwu"
-              class="profile-img"
-            />
-            <div class="profile-badge">
-              <span>Pan-Atlantic University</span>
-              <span class="code-tag">Nigeria</span>
-            </div>
+      <!-- Right Column: Complete Skill Set Summary in One Glance -->
+      <section class="skills-panel" aria-label="Skill Set Summary">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">// Technical Capabilities</p>
+            <h2 class="panel-title">Skill Set at a Glance</h2>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skill Set Section -->
-    <section id="skills" class="skills-section">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">// Technical Capabilities</p>
-          <h2 class="section-title">Core Skill Set</h2>
-          <p class="section-subtitle">
-            End-to-end embedded software engineering across bare-metal C/C++, microcontroller
-            peripherals, industrial &amp; long-range wireless protocols, and embedded machine learning.
-          </p>
+          <span class="panel-badge">End-to-End Embedded Stack</span>
         </div>
 
         <div class="skills-grid">
@@ -121,18 +129,18 @@
           <article class="skill-card">
             <div class="skill-card-header">
               <div class="skill-icon">&lt;/&gt;</div>
-              <h3 class="skill-card-title">Programming Languages</h3>
+              <div>
+                <h3 class="skill-card-title">Languages &amp; Web</h3>
+                <p class="skill-card-desc">Deterministic firmware &amp; interfaces</p>
+              </div>
             </div>
-            <p class="skill-card-desc">
-              Writing deterministic, memory-efficient firmware alongside modern scripting and web interfaces.
-            </p>
             <ul class="skill-tags">
               <li class="skill-tag">Embedded C</li>
               <li class="skill-tag">C++</li>
               <li class="skill-tag">Python</li>
               <li class="skill-tag">MicroPython</li>
               <li class="skill-tag">JavaScript</li>
-              <li class="skill-tag">HTML5 &amp; CSS3</li>
+              <li class="skill-tag">HTML5 / CSS3</li>
               <li class="skill-tag">SQL</li>
             </ul>
           </article>
@@ -141,17 +149,17 @@
           <article class="skill-card">
             <div class="skill-card-header">
               <div class="skill-icon">MCU</div>
-              <h3 class="skill-card-title">Microcontrollers &amp; SBCs</h3>
+              <div>
+                <h3 class="skill-card-title">Microcontrollers &amp; SBCs</h3>
+                <p class="skill-card-desc">Board bring-up &amp; HAL programming</p>
+              </div>
             </div>
-            <p class="skill-card-desc">
-              Hands-on board bring-up, HAL programming, and hardware interfacing across 32-bit architectures.
-            </p>
             <ul class="skill-tags">
-              <li class="skill-tag">STM32 (ARM Cortex-M / HAL)</li>
-              <li class="skill-tag">Espressif ESP32 &amp; ESP-EYE</li>
+              <li class="skill-tag">STM32 (Cortex-M / HAL)</li>
+              <li class="skill-tag">ESP32 &amp; ESP-EYE</li>
               <li class="skill-tag">ESP8266</li>
               <li class="skill-tag">Nordic nRF52840</li>
-              <li class="skill-tag">RP2040 (Raspberry Pi Pico)</li>
+              <li class="skill-tag">RP2040 (Pico)</li>
               <li class="skill-tag">UNIHIKER SBC</li>
               <li class="skill-tag">Arduino Core</li>
             </ul>
@@ -161,19 +169,19 @@
           <article class="skill-card">
             <div class="skill-card-header">
               <div class="skill-icon">IoT</div>
-              <h3 class="skill-card-title">Connectivity &amp; Protocols</h3>
+              <div>
+                <h3 class="skill-card-title">Connectivity &amp; Protocols</h3>
+                <p class="skill-card-desc">Low-power telemetry &amp; fieldbuses</p>
+              </div>
             </div>
-            <p class="skill-card-desc">
-              Designing low-power local and wide-area telemetry networks for industrial and smart-device deployments.
-            </p>
             <ul class="skill-tags">
-              <li class="skill-tag">LoRaWAN (RAK3172 / RAK7248C)</li>
+              <li class="skill-tag">LoRaWAN (RAK3172)</li>
               <li class="skill-tag">BLE / Bluetooth</li>
               <li class="skill-tag">Wi-Fi &amp; ESP-NOW</li>
-              <li class="skill-tag">Cellular IoT (Blues Notecard)</li>
+              <li class="skill-tag">Cellular (Blues Notecard)</li>
               <li class="skill-tag">Modbus RTU</li>
               <li class="skill-tag">UART / SPI / I2C</li>
-              <li class="skill-tag">AT Command Interfaces</li>
+              <li class="skill-tag">AT Commands</li>
             </ul>
           </article>
 
@@ -181,34 +189,31 @@
           <article class="skill-card">
             <div class="skill-card-header">
               <div class="skill-icon">SYS</div>
-              <h3 class="skill-card-title">Drivers, Edge AI &amp; Tooling</h3>
+              <div>
+                <h3 class="skill-card-title">Drivers, Edge AI &amp; Tools</h3>
+                <p class="skill-card-desc">Sensor libraries, TinyML &amp; workflows</p>
+              </div>
             </div>
-            <p class="skill-card-desc">
-              Custom sensor/ADC libraries, TinyML model deployment on edge devices, and modern embedded workflows.
-            </p>
             <ul class="skill-tags">
-              <li class="skill-tag">Custom Peripheral Drivers (AD4112 / LTC2959)</li>
+              <li class="skill-tag">ADC / Sensor Drivers</li>
               <li class="skill-tag">Edge Impulse (TinyML)</li>
-              <li class="skill-tag">Low-Power &amp; Energy Metering</li>
-              <li class="skill-tag">LittleFS &amp; Embedded Webservers</li>
+              <li class="skill-tag">Energy Metering</li>
+              <li class="skill-tag">LittleFS &amp; Webservers</li>
               <li class="skill-tag">PlatformIO &amp; STM32Cube</li>
-              <li class="skill-tag">Robotics &amp; Actuator Control</li>
-              <li class="skill-tag">Git &amp; GitHub Actions</li>
+              <li class="skill-tag">Robotics Control</li>
+              <li class="skill-tag">Git &amp; Linux</li>
             </ul>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
-  <!-- Footer -->
+  <!-- Compact Footer -->
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; 2026 Pius Onyema Ndukwu. Built with semantic HTML &amp; CSS.</p>
-      <div class="footer-links">
-        <a href="https://github.com/Pius171" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://x.com/ndukwu_pius" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
-      </div>
+      <p>&copy; 2026 Pius Onyema Ndukwu &mdash; Embedded Software Portfolio</p>
+      <p class="footer-note">More pages (Projects, Hardware Logs &amp; Contact) coming soon</p>
     </div>
   </footer>
 </body>
