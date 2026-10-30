@@ -827,3 +827,419 @@ body {
     gap: 0.4rem;
   }
 }
+
+/* ==========================================================================
+   SINGLE-PAGE PROJECT CASE STUDY TEMPLATE (project.html)
+   ========================================================================== */
+.project-detail-main {
+  flex: 1;
+  padding: 1.25rem 0 3rem;
+}
+
+.detail-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.35rem 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.back-link:hover {
+  color: var(--accent-primary);
+  border-color: var(--border-accent);
+  transform: translateX(-2px);
+}
+
+.detail-nav-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+.project-step-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.3rem 0.65rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.45rem;
+  transition: all 0.2s ease;
+}
+
+.project-step-link:hover {
+  color: var(--accent-primary);
+  border-color: var(--border-accent);
+}
+
+.step-divider {
+  color: var(--text-muted);
+}
+
+.detail-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.15rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.detail-title {
+  font-size: clamp(1.45rem, 2.6vw, 2.05rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.detail-repo-btn {
+  flex: unset;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  padding: 0.55rem 1rem;
+}
+
+/* Dynamic Picture Collage (1 to 4 Images) */
+.collage-section {
+  margin-bottom: 1.65rem;
+}
+
+.collage-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.65rem;
+}
+
+.collage-badge {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-secondary);
+}
+
+.collage-tester {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  padding: 0.22rem 0.4rem;
+  border-radius: 0.55rem;
+}
+
+.tester-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  padding: 0 0.35rem;
+}
+
+.collage-test-btn {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.38rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.collage-test-btn:hover {
+  color: var(--text-primary);
+}
+
+.collage-test-btn.active {
+  color: #04130d;
+  background: var(--accent-primary);
+  font-weight: 700;
+}
+
+.project-collage {
+  display: grid;
+  gap: 0.85rem;
+  width: 100%;
+}
+
+/* 1 Image: Full-width hero showcase */
+.project-collage.collage-count-1 {
+  grid-template-columns: 1fr;
+  height: 360px;
+}
+
+/* 2 Images: Side-by-side 50/50 split */
+.project-collage.collage-count-2 {
+  grid-template-columns: repeat(2, 1fr);
+  height: 330px;
+}
+
+/* 3 Images: Primary hero on left (spans 2 rows) + 2 stacked views on right */
+.project-collage.collage-count-3 {
+  grid-template-columns: 1.35fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  height: 380px;
+}
+
+.project-collage.collage-count-3 .collage-item-1 {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+/* 4 Images: Balanced 2x2 Engineering Gallery */
+.project-collage.collage-count-4 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 195px);
+}
+
+.collage-item {
+  position: relative;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  background: #090d16;
+  cursor: zoom-in;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.collage-item:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+}
+
+.collage-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.collage-item:hover img {
+  transform: scale(1.025);
+}
+
+.collage-caption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 1.5rem 0.9rem 0.7rem;
+  background: linear-gradient(to top, rgba(8, 12, 20, 0.95) 0%, rgba(8, 12, 20, 0.65) 60%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+}
+
+.collage-tag {
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--accent-primary);
+  background: rgba(16, 185, 129, 0.14);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  padding: 0.1rem 0.45rem;
+  border-radius: 0.3rem;
+}
+
+.collage-caption-text {
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Detailed Description & Skills Grid */
+.detail-content-grid {
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  gap: 1.35rem;
+  align-items: start;
+}
+
+.detail-description-panel,
+.detail-skills-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  border-radius: 1rem;
+  padding: 1.4rem;
+  backdrop-filter: blur(8px);
+}
+
+.detail-section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+}
+
+.detail-paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  color: var(--text-secondary);
+  font-size: 0.94rem;
+  line-height: 1.68;
+}
+
+.detail-highlights-box {
+  margin-top: 1.35rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.highlights-heading {
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  color: var(--accent-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.65rem;
+}
+
+.detail-highlights-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-highlights-list li {
+  position: relative;
+  padding-left: 1.2rem;
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.detail-highlights-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--accent-primary);
+  font-family: var(--font-mono);
+}
+
+.detail-skills-note {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.detail-skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  list-style: none;
+}
+
+.detail-skill-tag {
+  font-size: 0.76rem;
+  padding: 0.32rem 0.68rem;
+  border-color: rgba(16, 185, 129, 0.25);
+}
+
+/* Lightbox Zoom Modal */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(6, 10, 17, 0.9);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.lightbox-modal[hidden] {
+  display: none;
+}
+
+.lightbox-inner {
+  max-width: 920px;
+  width: 100%;
+  text-align: center;
+}
+
+.lightbox-img {
+  width: 100%;
+  max-height: 76vh;
+  object-fit: contain;
+  border-radius: 0.85rem;
+  border: 1px solid var(--border-accent);
+  background: #0b1120;
+}
+
+.lightbox-caption {
+  margin-top: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lightbox-close:hover {
+  border-color: var(--border-accent);
+  color: var(--accent-primary);
+}
+
+@media (max-width: 860px) {
+  .detail-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-collage.collage-count-2,
+  .project-collage.collage-count-3,
+  .project-collage.collage-count-4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+  }
+
+  .project-collage.collage-count-3 .collage-item-1 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .collage-item {
+    height: 220px;
+  }
+
+  .detail-content-grid {
+    grid-template-columns: 1fr;
+  }
+}

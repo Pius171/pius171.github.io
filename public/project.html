@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Case Study | Pius Onyema Ndukwu</title>
+  <meta
+    name="description"
+    content="Detailed engineering project breakdown by Pius Onyema Ndukwu — Embedded Systems &amp; IoT Engineer."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="projects-page project-detail-page">
+  <!-- Top Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="brand">
+        <span class="brand-dot"></span>
+        <span>pius.ndukwu</span>
+      </a>
+      <div class="status-pill">
+        <span class="status-pulse"></span>
+        <span>Embedded Systems &amp; IoT Engineer</span>
+      </div>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li>
+            <a
+              href="https://github.com/Pius171"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="nav-icon-link"
+              aria-label="GitHub"
+              title="GitHub"
+            >
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true">
+                <path d="M12 0.297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385 0.6 0.113 0.82-0.258 0.82-0.577 0-0.285-0.01-1.04-0.015-2.04-3.338 0.724-4.042-1.61-4.042-1.61-0.546-1.385-1.335-1.755-1.335-1.755-1.087-0.744 0.084-0.729 0.084-0.729 1.205 0.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495 0.998 0.108-0.776 0.417-1.305 0.76-1.605-2.665-0.3-5.466-1.332-5.466-5.93 0-1.31 0.465-2.38 1.235-3.22-0.135-0.303-0.54-1.523 0.105-3.176 0 0 1.005-0.322 3.3 1.23 0.96-0.267 1.98-0.399 3-0.405 1.02 0.006 2.04 0.138 3 0.405 2.28-1.552 3.285-1.23 3.285-1.23 0.645 1.653 0.24 2.873 0.12 3.176 0.765 0.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92 0.42 0.36 0.81 1.096 0.81 2.22 0 1.606-0.015 2.896-0.015 3.286 0 0.315 0.21 0.69 0.825 0.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/pius-ndukwu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="nav-icon-link"
+              aria-label="LinkedIn"
+              title="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-0.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h0.046c0.477-0.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-0.926-2.063-2.065 0-1.138 0.92-2.063 2.063-2.063 1.14 0 2.064 0.925 2.064 2.063 0 1.139-0.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C0.792 0 0 0.774 0 1.729v20.542C0 23.227 0.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0h0.003z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Single-Page Dynamic Project Detail Template -->
+  <main class="project-detail-main">
+    <div class="container">
+      <!-- Top Breadcrumb & Quick Navigation Bar -->
+      <div class="detail-topbar">
+        <a href="projects.html" class="back-link">
+          <span>&larr;</span>
+          <span>Back to All Projects</span>
+        </a>
+        <div class="detail-nav-controls" id="project-Compute-nav">
+          <a href="#" id="prev-project-link" class="project-step-link">&larr; Prev</a>
+          <span class="step-divider">/</span>
+          <a href="#" id="next-project-link" class="project-step-link">Next &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Project Header -->
+      <header class="detail-header">
+        <div class="detail-title-wrap">
+          <span id="detail-category" class="project-category">Category</span>
+          <h1 id="detail-title" class="detail-title">Loading Project...</h1>
+        </div>
+        <div class="detail-header-actions">
+          <a
+            id="detail-repo-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-secondary detail-repo-btn"
+          >
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+              <path d="M12 0.297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385 0.6 0.113 0.82-0.258 0.82-0.577 0-0.285-0.01-1.04-0.015-2.04-3.338 0.724-4.042-1.61-4.042-1.61-0.546-1.385-1.335-1.755-1.335-1.755-1.087-0.744 0.084-0.729 0.084-0.729 1.205 0.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495 0.998 0.108-0.776 0.417-1.305 0.76-1.605-2.665-0.3-5.466-1.332-5.466-5.93 0-1.31 0.465-2.38 1.235-3.22-0.135-0.303-0.54-1.523 0.105-3.176 0 0 1.005-0.322 3.3 1.23 0.96-0.267 1.98-0.399 3-0.405 1.02 0.006 2.04 0.138 3 0.405 2.28-1.552 3.285-1.23 3.285-1.23 0.645 1.653 0.24 2.873 0.12 3.176 0.765 0.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92 0.42 0.36 0.81 1.096 0.81 2.22 0 1.606-0.015 2.896-0.015 3.286 0 0.315 0.21 0.69 0.825 0.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+            <span>View Repository</span>
+          </a>
+        </div>
+      </header>
+
+      <!-- ====================================================================
+           DYNAMIC PICTURE COLLAGE (Adapts automatically to 1, 2, 3, or 4 images)
+           ==================================================================== -->
+      <section class="collage-section" aria-label="Project visual gallery">
+        <div class="collage-toolbar">
+          <span id="collage-count-badge" class="collage-badge">Visual Gallery</span>
+          <div class="collage-tester" role="group" aria-label="Preview adaptive collage layout">
+            <span class="tester-label">Test Collage Layout:</span>
+            <button type="button" class="collage-test-btn" data-count="1">1 Image</button>
+            <button type="button" class="collage-test-btn" data-count="2">2 Images</button>
+            <button type="button" class="collage-test-btn" data-count="3">3 Images</button>
+            <button type="button" class="collage-test-btn" data-count="4">4 Images</button>
+          </div>
+        </div>
+
+        <div id="project-collage" class="project-collage collage-count-4">
+          <!-- Adaptive 1-to-4 image tiles injected by project-detail.js -->
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           DETAILED PROJECT DESCRIPTION & SKILLS/TOOLS USED
+           ==================================================================== -->
+      <section class="detail-content-grid" aria-label="Project details and technical stack">
+        <!-- Left Column: Detailed Description & Key Engineering Highlights -->
+        <div class="detail-description-panel">
+          <p class="eyebrow">// System Overview &amp; Architecture</p>
+          <h2 class="detail-section-title">What This Project Does</h2>
+          <div id="detail-description-body" class="detail-paragraphs">
+            <!-- Detailed description paragraphs injected here -->
+          </div>
+
+          <div id="detail-highlights-box" class="detail-highlights-box">
+            <h3 class="highlights-heading">Key Engineering Highlights</h3>
+            <ul id="detail-highlights-list" class="detail-highlights-list">
+              <!-- Bullet highlights injected here -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Column: Skills & Tools Used -->
+        <aside class="detail-skills-panel" aria-label="Skills and tools used">
+          <div class="detail-skills-card">
+            <p class="eyebrow">// Technical Stack</p>
+            <h2 class="detail-section-title">Skills &amp; Tools Used</h2>
+            <p class="detail-skills-note">
+              Hardware platforms, firmware frameworks, protocols, and EDA/cloud tooling applied in this project:
+            </p>
+            <ul id="detail-skills-list" class="detail-skills-tags">
+              <!-- Skill tags injected here -->
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  <!-- Image Lightbox Modal (click any collage image to inspect full screen) -->
+  <div id="lightbox-modal" class="lightbox-modal" hidden aria-modal="true" role="dialog">
+    <button type="button" id="lightbox-close" class="lightbox-close" aria-label="Close image preview">&times;</button>
+    <div class="lightbox-inner">
+      <img id="lightbox-img" src="" alt="" class="lightbox-img" />
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- Compact Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Pius Onyema Ndukwu &mdash; Embedded Systems &amp; IoT Portfolio</p>
+      <p class="footer-note">Hardware &bull; Firmware &bull; Edge AI &bull; Cloud IoT</p>
+    </div>
+  </footer>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "firebase/app": "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js",
+        "firebase/analytics": "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js"
+      }
+    }
+  </script>
+  <script type="module" src="firebase-init.js"></script>
+  <script src="projects-data.js"></script>
+  <script src="project-detail.js"></script>
+</body>
+</html>
