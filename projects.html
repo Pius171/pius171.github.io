@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Pius Onyema Ndukwu — Embedded Systems &amp; IoT Engineer</title>
+  <meta
+    name="description"
+    content="Engineering projects by Pius Onyema Ndukwu — Custom PCBs, ESP-IDF &amp; STM32 firmware, LoRaWAN &amp; industrial telemetry, and Edge AI deployments."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="projects-page">
+  <!-- Top Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="brand">
+        <span class="brand-dot"></span>
+        <span>pius.ndukwu</span>
+      </a>
+      <div class="status-pill">
+        <span class="status-pulse"></span>
+        <span>Embedded Systems &amp; IoT Engineer</span>
+      </div>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="https://github.com/Pius171" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/pius-onyema-ndukwu/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Scrollable Projects Feed -->
+  <main class="projects-main">
+    <div class="container">
+      <!-- Compact Header so 3+ project cards are immediately visible in one glance -->
+      <div class="projects-header">
+        <div class="projects-header-text">
+          <p class="eyebrow">// Hardware, Firmware &amp; IoT Systems</p>
+          <h1 class="projects-title">Featured Engineering Projects</h1>
+        </div>
+        <p class="projects-subtitle">
+          Auto-cycling 4-stage previews &bull; Scroll vertically to explore more
+        </p>
+      </div>
+
+      <!-- Vertical List of Project Cards (populated from #project-card-template) -->
+      <section
+        id="projects-list"
+        class="projects-list"
+        aria-label="List of engineering projects"
+      ></section>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       REUSABLE PROJECT CARD TEMPLATE
+       Used by projects.js to render each project card with:
+       1. 4-image auto-scrolling carousel + slide indicators
+       2. Project title, category badge & clickable link target
+       3. Brief project description
+       4. Skills & tools tags used in the project
+       ======================================================================== -->
+  <template id="project-card-template">
+    <article class="project-card">
+      <!-- 4-Image Auto-Scrolling Carousel -->
+      <div class="project-carousel" aria-label="Project image gallery">
+        <div class="carousel-track">
+          <!-- 4 slides injected here -->
+        </div>
+        <div class="carousel-dots" aria-hidden="true">
+          <span class="carousel-dot active" data-slide="0"></span>
+          <span class="carousel-dot" data-slide="1"></span>
+          <span class="carousel-dot" data-slide="2"></span>
+          <span class="carousel-dot" data-slide="3"></span>
+        </div>
+        <span class="carousel-stage-label">1 / 4</span>
+      </div>
+
+      <!-- Project Content & Metadata -->
+      <div class="project-body">
+        <div class="project-top-row">
+          <div class="project-title-group">
+            <span class="project-category">Category</span>
+            <h2 class="project-card-title">
+              <a href="#" class="project-card-link">Project Title</a>
+            </h2>
+          </div>
+          <a href="#" class="project-action-link" aria-label="View project details">
+            <span>View Project</span>
+            <span class="arrow-icon">&rarr;</span>
+          </a>
+        </div>
+
+        <p class="project-description">
+          Brief description of what the project does, its architecture, and real-world impact.
+        </p>
+
+        <div class="project-footer-row">
+          <span class="tools-label">Tools &amp; Stack:</span>
+          <ul class="project-skills" aria-label="Skills and tools used">
+            <!-- Skill tags injected here -->
+          </ul>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <!-- Compact Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Pius Onyema Ndukwu &mdash; Embedded Systems &amp; IoT Portfolio</p>
+      <p class="footer-note">Hardware &bull; Firmware &bull; Edge AI &bull; Cloud IoT</p>
+    </div>
+  </footer>
+
+  <script src="projects.js"></script>
+</body>
+</html>
